@@ -1,0 +1,147 @@
+ Build a Technical Documentation Page
+HTML
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Technical Documentation Page</title>
+     <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        <h1>Technical Documentation</h1>
+      </header>
+      <ul>
+        <li><a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a></li>
+        <li><a class="nav-link" href="#Python_and_Ruby">Python and Ruby</a></li>
+        <li><a class="nav-link" href="#HTML_and_CSS">HTML and CSS</a></li>
+        <li><a class="nav-link" href="#React_and_Vue">React and Vue</a></li>
+        <li><a class="nav-link" href="#Node_and_Express">Node and Express</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="JavaScript_and_Java">
+        <header>JavaScript and Java</header>
+        <p>JavaScript and Java are both programming languages...</p>
+        <p>Some differences between JavaScript and Java include...</p>
+        <h2>JavaScript</h2>
+        <p>JavaScript is a dynamic, interpreted programming language...</p>
+        <h3>Syntax</h3>
+        <p>The syntax of JavaScript is similar to that of other programming languages...</p>
+        <h3>Examples</h3>
+        <code>var x = 5;</code>
+        <code>console.log(x);</code>
+        <ul>
+          <li>Example 1</li>
+          <li>Example 2</li>
+          <li>Example 3</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Python_and_Ruby">
+        <header>Python and Ruby</header>
+        <p>Python and Ruby are both high-level, interpreted programming languages...</p>
+        <h2>Python</h2>
+        <p>Python is a popular programming language for web development...</p>
+        <h3>Syntax</h3>
+        <p>The syntax of Python is simple and easy to learn...</p>
+        <h3>Examples</h3>
+        <code>x = 5</code>
+        <code>print(x)</code>
+        <ul>
+          <li>Example 1</li>
+          <li>Example 2</li>
+          <li>Example 3</li>
+        </ul>
+      </section>
+      <section class="main-section" id="HTML_and_CSS">
+        <header>
+          <h2>HTML and CSS</h2>
+        </header>
+        <p>HTML and CSS are both markup languages...</p>
+        <h3>Syntax</h3>
+        <p>The syntax of HTML is based on tags and attributes...</p>
+        <h3>Examples</h3>
+        <code>&lt;html&gt;</code>
+        <code>&lt;head&gt;</code>
+        <ul>
+          <li>Example 1</li>
+          <li>Example 2</li>
+          <li>Example 3</li>
+        </ul>
+      </section>
+            <section class="main-section" id="React_and_Vue">
+        <header>
+          <h2>React and Vue</h2>
+        </header>
+        <p>
+          React and Vue are two popular JavaScript frameworks used for building
+          user interfaces.
+        </p>
+        <p>
+          React was created by Facebook in 2011, while Vue was created by Evan You
+          in 2014.
+        </p>
+        <p>
+          React is a component-based library that focuses on declarative views and
+          efficient rendering, while Vue is a progressive framework that can be used
+          for both small and large-scale applications.
+        </p>
+        <code>const element = <h1>Hello, world!</h1>;</code>
+        <code>ReactDOM.render(element, document.getElementById('root'));</code>
+        <ul>
+          <li>React uses JSX syntax</li>
+          <li>Vue uses templates</li>
+        </ul>
+      </section>
+<section class="main-section" id="Node_and_Express">
+        <header><h2>Node and Express</h2></header>
+        <p>
+          Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a web browser. It allows developers to run JavaScript on the server-side, which provides several advantages such as better performance, easier scalability, and the ability to handle multiple connections.
+        </p>
+        <p>
+          Express.js is a fast, unopinionated, minimalist web framework for Node.js that provides a set of features for building single-page, multi-page, and hybrid web applications. It provides a robust set of features for web and mobile applications.
+        </p>
+        <code>const express = require('express')</code>
+        <code>const app = express()</code>
+        <ul>
+          <li>Node.js allows for server-side JavaScript programming</li>
+          <li>Express.js provides a set of features for building web applications</li>
+        </ul>
+      </section>
+CSS
+/* Default styles for navigation bar */
+#navbar {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  /* Adjust the width and position of the navigation bar */
+  #navbar {
+    width: 100%;
+    position: static;
+  }
+  
+  /* Hide the navigation links */
+  #navbar ul {
+    display: none;
+  }
+  
+  /* Add a hamburger menu icon */
+  #navbar .nav-link {
+    display: block;
+    padding: 10px;
+    background-color: #555;
+    cursor: pointer;
+  }
+  
+  /* Show the navigation links when the hamburger icon is clicked */
+  #navbar ul.show {
+    display: block;
+  }
+}
